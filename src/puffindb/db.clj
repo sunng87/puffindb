@@ -8,5 +8,5 @@
 (defn open-db []
   (RocksDB/open (default-options) "/tmp/default.db"))
 
-(defn close-db [db]
+(defn drop-db [db]
   (.close db))

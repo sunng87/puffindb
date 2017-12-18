@@ -15,8 +15,7 @@
   :stop (s/stop-slacker-server server))
 
 (m/defstate db
-  :start (db/open-db)
-  :stop (db/close-db db))
+  :start (db/open-db))
 
 (defn -main
   "I don't do a whole lot ... yet."
