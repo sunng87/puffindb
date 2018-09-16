@@ -5,8 +5,8 @@
   (doto (Options.)
     (.setCreateIfMissing true)))
 
-(defn open-db []
-  (RocksDB/open (default-options) "/tmp/default.db"))
+(defn open-db [path]
+  (RocksDB/open (default-options) path))
 
 (defn drop-db [db]
   (.close db))
