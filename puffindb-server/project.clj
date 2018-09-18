@@ -9,7 +9,9 @@
                  [com.taoensso/nippy "2.13.0"]
                  [org.clojure/tools.logging "0.4.1"]
                  [mount "0.1.13"]
-                 [bulbul "0.1.0-SNAPSHOT"]]
+                 [bulbul "0.1.0-SNAPSHOT"]
+                 [org.apache.logging.log4j/log4j-api "2.11.1"]
+                 [org.apache.logging.log4j/log4j-core "2.11.1"]]
   :main ^:skip-aot puffindb.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

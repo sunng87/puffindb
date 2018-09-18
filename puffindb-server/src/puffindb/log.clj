@@ -1,7 +1,8 @@
 (ns puffindb.log
   (:require [bulbul.codec :as bc]
             [bulbul.seg :as bs]
-            [bulbul.protocol :as bp]))
+            [bulbul.protocol :as bp]
+            [bulbul.seg.writer]))
 
 (def puffin-key (bc/byte-block (bc/int16)))
 (def puffin-value (bc/byte-block (bc/int16)))
