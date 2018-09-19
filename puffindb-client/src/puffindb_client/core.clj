@@ -7,7 +7,11 @@
 
 (s/defn-remote sc puffindb.api/get)
 
+(s/defn-remote sc puffindb.api/mget)
+
 (s/defn-remote sc puffindb.api/rm)
+
+(s/defn-remote sc puffindb.api/scan)
 
 (defn create-puffindb-client [host port]
   (s/slackerc (str host ":" port) :content-type :nippy))
